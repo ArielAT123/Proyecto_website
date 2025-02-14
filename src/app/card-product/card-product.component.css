@@ -1,0 +1,41 @@
+div{
+    margin: auto;
+}
+
+div,p,img{
+  margin: 0;
+}
+
+p {
+  font-size: 15px;
+}
+
+.container{
+  width: 30%;
+  height: 300px;
+  background-color: aqua;
+  border-radius: 15px;
+}
+img{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.img{
+  height: 195px;
+}
+
+.seccionInfo1{
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  background-color: rebeccapurple;
+
+}
+.seccionInfo{
+  margin: 10px;
+}
+
+.descripcion{
+  font-size: 9;
+
+}
