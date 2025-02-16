@@ -26,7 +26,7 @@ export class LoginComponent {
     if (this.email === 'usuario@example.com' && this.password === 'contraseña') {
       localStorage.setItem('token', 'token-simulado'); 
       console.log('Redirigiendo a Dashboard...');
-      this.router.navigate(['/dashboard']); 
+      this.router.navigate(['/cardproduct']); 
     } else {
       alert('Credenciales incorrectas'); 
     }
