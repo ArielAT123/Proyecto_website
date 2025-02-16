@@ -8,9 +8,9 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './registro.component.css'
 })
 export class RegistroComponent {
-    email = String;
-    password = String;
-    repeatPassword = String;
+    email ?: string;
+    password ?: string;
+    repeatPassword ?: string;
   
     constructor(private router: Router) {}
   

@@ -13,14 +13,24 @@ export class LoginComponent {
   email = '';
   password = '';
 
+  
   constructor(private router: Router) {}
+
+
+  goToRegister() {
+    console.log('Redirigiendo a Registro...');
+    this.router.navigate(['/registro']);  
+  }
 
   login() {
     if (this.email === 'usuario@example.com' && this.password === 'contraseña') {
       localStorage.setItem('token', 'token-simulado'); 
+      console.log('Redirigiendo a Dashboard...');
       this.router.navigate(['/dashboard']); 
     } else {
       alert('Credenciales incorrectas'); 
     }
   }
-}
+
+  
+} 
