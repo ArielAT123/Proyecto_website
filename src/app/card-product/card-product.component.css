@@ -1,5 +1,5 @@
-div{
-    margin: auto;
+:host{
+  display: contents;
 }
 
 div,p,img{
@@ -11,10 +11,11 @@ p {
 }
 
 .container{
-  width: 30%;
+  width: 250px;
   height: 300px;
   background-color: aqua;
   border-radius: 15px;
+  border: 0.5px solid black; /* Borde de 2px, sólido y azul */
 }
 img{
   border-top-left-radius: 15px;
@@ -28,11 +29,15 @@ img{
   display: flex;
   flex-direction: row;
   gap: 25px;
-  background-color: rebeccapurple;
-
+  color: purple;
 }
+
 .seccionInfo{
+  display: flex;
   margin: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 
 .descripcion{
