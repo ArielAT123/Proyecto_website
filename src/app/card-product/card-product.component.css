@@ -1,47 +1,68 @@
-:host{
-  display: contents;
+/* Estilos base del contenedor */
+.container {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
 }
 
-div,p,img{
+/* Efecto de sombra al hacer hover */
+.container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos de la imagen */
+.img {
+  overflow: hidden;
+}
+
+.img img {
+  transition: transform 0.3s ease;
+}
+
+/* Efecto de desplazamiento de la imagen al hacer hover (Opción 9) */
+.container:hover .img img {
+  transform: translateY(-10px);
+}
+
+/* Estilos de la sección de información */
+.seccionInfo {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.seccionInfo1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.seccionInfo1 p {
   margin: 0;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-p {
-  font-size: 15px;
+.seccionInfo2 p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
 }
 
-.container{
-  width: 250px;
-  height: 300px;
-  background-color: aqua;
-  border-radius: 15px;
-  border: 0.5px solid black; /* Borde de 2px, sólido y azul */
-  box-shadow: 10px 10px 30px rgba(36, 35, 35, 0.411);
-}
-img{
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-.img{
-  height: 195px;
+/* Estilos del contenido adicional que aparece al hacer hover (Opción 5) */
+.hover-content {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  transition: bottom 0.5s ease;
 }
 
-.seccionInfo1{
-  display: flex;
-  flex-direction: row;
-  gap: 25px;
-  color: purple;
-}
-
-.seccionInfo{
-  display: flex;
-  margin: 10px;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-}
-
-.descripcion{
-  font-size: 9;
-
+/* Efecto de entrada del contenido adicional al hacer hover */
+.container:hover .hover-content {
+  bottom: 0;
 }
