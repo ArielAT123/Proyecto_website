@@ -1,5 +1,14 @@
 <header class="header">
-  <p class="center">this is the header</p>
+  <nav class="containerHeader">
+    <div class="headerImg">
+      <img src="https://w7.pngwing.com/pngs/174/559/png-transparent-chayanne-chiquito-thumbnail.png" alt="ChayanneSmall" width="60px" height="60px">
+    </div>
+    <ul class="containerHeaderLista">
+      <li><a routerLink="/screen-home">Inicio</a></li>
+      <li><a routerLink="/screen-home">buscar</a></li>
+      <li><a routerLink='/login'>Iniciar Sesion</a></li>
+    </ul>
+  </nav>
 </header>
 
 
@@ -34,3 +43,4 @@
   <p class="center">this is the footer</p>
 </footer>
 
+<router-outlet></router-outlet>
