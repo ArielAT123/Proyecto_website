@@ -16,6 +16,7 @@ p {
   background-color: aqua;
   border-radius: 15px;
   border: 0.5px solid black; /* Borde de 2px, sólido y azul */
+  box-shadow: 10px 10px 30px rgba(36, 35, 35, 0.411);
 }
 img{
   border-top-left-radius: 15px;

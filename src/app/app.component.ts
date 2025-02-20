@@ -6,6 +6,11 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [RouterModule], 
   template: `
+  <!-- <nav>
+    <a routerLink="/">Home</a>
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/login">Login</a>
+  </nav> -->
     <router-outlet></router-outlet> 
   `,
   styleUrls: ['./app.component.css'],
