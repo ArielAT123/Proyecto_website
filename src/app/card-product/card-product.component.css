@@ -5,6 +5,7 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
   transition: box-shadow 0.3s ease;
 }
 
@@ -16,18 +17,22 @@
 /* Estilos de la imagen */
 .img {
   overflow: hidden;
+  height: 300px; 
+  flex-shrink: 0;
 }
 
 .img img {
+  width: 95%; 
+  height: 95%; 
+  object-fit: cover; 
   transition: transform 0.3s ease;
-}
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
+} 
 
-/* Efecto de desplazamiento de la imagen al hacer hover (Opción 9) */
 .container:hover .img img {
   transform: translateY(-10px);
 }
 
-/* Estilos de la sección de información */
 .seccionInfo {
   padding: 10px;
   background-color: #fff;

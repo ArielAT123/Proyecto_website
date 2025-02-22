@@ -13,30 +13,10 @@
 
 
 <main class="containerBody">
-  <h1 class="text">Productos</h1>
+  <h1 class="text">Colección</h1>
   <div class="containerCard">
-    
-    <app-card-product></app-card-product> <!-- Usando CardProductComponent -->
-    <app-card-product></app-card-product> <!-- Usando CardProductComponent -->
-    <app-card-product></app-card-product> <!-- Usando CardProductComponent -->
-    <app-card-product></app-card-product> <!-- Usando CardProductComponent -->
-    <app-card-product></app-card-product> <!-- Usando CardProductComponent -->
-    <app-card-product></app-card-product> <!-- Usando CardProductComponent -->
-    <app-card-product></app-card-product> <!-- Usando CardProductComponent -->
-    <app-card-product></app-card-product> <!-- Usando CardProductComponent -->
-    <app-card-product></app-card-product> <!-- Usando CardProductComponent -->
-    <app-card-product></app-card-product> <!-- Usando CardProductComponent -->
-    <app-card-product></app-card-product> <!-- Usando CardProductComponent -->
-    <app-card-product></app-card-product> <!-- Usando CardProductComponent -->
-    <app-card-product></app-card-product> <!-- Usando CardProductComponent -->
-    <app-card-product></app-card-product> <!-- Usando CardProductComponent -->
-    <app-card-product></app-card-product> <!-- Usando CardProductComponent -->
-    <app-card-product></app-card-product> <!-- Usando CardProductComponent -->
-    <app-card-product></app-card-product> <!-- Usando CardProductComponent -->
-    <app-card-product></app-card-product> <!-- Usando CardProductComponent -->
-    <app-card-product></app-card-product> <!-- Usando CardProductComponent -->
-    <app-card-product></app-card-product> <!-- Usando CardProductComponent -->
-    <app-card-product></app-card-product> <!-- Usando CardProductComponent -->
+    <!-- Itera sobre la lista de productos -->
+    <app-card-product *ngFor="let product of products" [product]="product"></app-card-product>
   </div>
 </main>
 

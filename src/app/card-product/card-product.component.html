@@ -1,18 +1,17 @@
-
-
 <div class="container">
   <div class="img">
-    <img src="https://i.redd.it/t6qhk3i3mk4d1.jpeg" alt="no hay" width="100%" height="100%">
-    <!-- estos sera activado cuando tengamos base de datos
-     <img src={{imageUrl}} alt="no hay" width="100%" height="100%"> -->
+    <!-- Usa la propiedad imageUrl del objeto product -->
+    <img [src]="product.imageUrl" alt="no hay" width="100%" height="100%">
   </div>
   <div class="seccionInfo">
     <div class="seccionInfo1">
-      <p>{{name}}</p>
-      <p>$ {{price}}</p>
+      <!-- Usa las propiedades name y price del objeto product -->
+      <p>{{ product.name }}</p>
+      <p>$ {{ product.price }}</p>
     </div>
     <div class="seccionInfo2">
-      <p>{{descripcionMin}} </p>
+      <!-- Usa la propiedad descripcionMin del objeto product -->
+      <p>{{ product.descripcionMin }}</p>
     </div>
   </div>
   <!-- Texto adicional que aparecerá al hacer hover -->
