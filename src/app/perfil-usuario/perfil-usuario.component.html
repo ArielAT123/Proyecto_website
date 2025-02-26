@@ -1,0 +1,24 @@
+<div class="perfil-container">
+    <div class="perfil-info">
+      <h2>Perfil de Usuario</h2>
+      <div class="perfil-foto">
+        <img src="https://wallpapers.com/images/hd/best-profile-pictures-2h94ge4qz9y05dbw.jpg" alt="Foto de perfil" class="foto-circular">
+      </div>
+      <div class="info-item"><strong>Nombre del Negocio:</strong> <span>{{ nombre_negocio }}</span></div>
+      <div class="info-item"><strong>Nombre del Usuario:</strong> <span>{{ nombre_usuario }}</span></div>
+      <div class="info-item"><strong>Correo:</strong> <span>{{ correo || 'No especificado' }}</span></div>
+      <div class="info-item"><strong>Teléfono:</strong> <span>{{ telefono || 'No especificado' }}</span></div>
+      <div class="descripcion-container">
+        <p class="descripcion">{{ descripcion }}</p>
+      </div>
+      <div class="ubicacion">
+        <svg class="ubicacion-icono" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+          <path d="M5.64 16.36a9 9 0 1 1 12.72 0l-5.65 5.66a1 1 0 0 1-1.42 0l-5.65-5.66zm11.31-1.41a7 7 0 1 0-9.9 0L12 19.9l4.95-4.95zM12 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+        </svg>
+        <span>{{ ubicacion }}</span>
+      </div>
+    </div>
+    <div class="screen-home">
+      <app-screen-home></app-screen-home>
+    </div>
+</div>

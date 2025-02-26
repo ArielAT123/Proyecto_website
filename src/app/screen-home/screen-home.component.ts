@@ -11,6 +11,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   standalone: true,
 })
 export class ScreenHomeComponent {
+  
 
   listaUrlImagenes = ['https://image.made-in-china.com/202f0j00ZNtkFCuGLJor/OEM-Factory-Customized-Anime-Action-Figure-Products-Movie-Comics-Manga-Video-Game-Cartoon-Character-Gojo-Satoru-Geto-Suguru-Jujutsu-Kaisen-Figure.webp' , 
   'https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202308/18/00183180143485____1__640x640.jpg',
@@ -23,7 +24,7 @@ export class ScreenHomeComponent {
 
   constructor() {
     
-    for (let i = 4; i <= 64; i++) {
+    for (let i = 4; i <= 63; i++) {
       this.products.push({ 
         id: i, 
         name: `Producto ${i}`, 

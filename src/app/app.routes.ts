@@ -4,6 +4,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { RegistroComponent } from './registro/registro.component'; 
 import { CardProductComponent } from './card-product/card-product.component';
 import { ScreenHomeComponent } from './screen-home/screen-home.component';
+import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
 
 export const appRoutes: Routes = [
   { path: '', redirectTo: 'screen-home', pathMatch: 'full' }, // Redirige a /login por defecto
@@ -12,4 +13,5 @@ export const appRoutes: Routes = [
   { path: 'registro', component: RegistroComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'screen-home', component: ScreenHomeComponent },
+  {path: 'perfil', component: PerfilUsuarioComponent}
 ];
