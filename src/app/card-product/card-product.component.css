@@ -4,14 +4,10 @@
   overflow: hidden;
   border: 1px solid #ccc;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgb(255, 255, 255);
   width: 250px;
   transition: box-shadow 0.3s ease;
-}
-
-/* Efecto de sombra al hacer hover */
-.container:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
 }
 
 /* Estilos de la imagen */
@@ -22,8 +18,8 @@
 }
 
 .img img {
-  width: 95%; 
-  height: 95%; 
+  width: 100%; 
+  height: 100%; 
   object-fit: cover; 
   transition: transform 0.3s ease;
   filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));

@@ -1,74 +1,76 @@
-a{
+/* Estilos generales para enlaces */
+a {
   text-decoration: none;
   color: whitesmoke;
 }
-.header{
+
+/* Header */
+.header {
   background-color: #333333;
   margin: 0;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Sombra */
   position: fixed; /* Fija el header en la parte superior */
   top: 0;          /* Lo coloca en la parte superior */
   left: 0;         /* Lo coloca en el borde izquierdo */
   width: 100%;     /* Ocupa el ancho completo de la página */
-  color: white;    
-  padding: 10px 20px; 
+  color: white;
   z-index: 1000;
-  box-sizing: border-box;      
+  box-sizing: border-box;
 }
 
-.headerImg{
+/* Imagen del header */
+.headerImg {
   height: 60px;
   width: 60px;
 }
 
-.containerHeader{
+/* Contenedor del header */
+.containerHeader {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
+.headerImg img {
+  border-radius: 50%;
+  margin-left: 25%;
+}
 
-.containerHeaderLista{
+/* Lista del header */
+.containerHeaderLista {
   display: flex;
   flex-direction: row;
   gap: 15px;
   list-style: none;
   font-size: 20px;
   color: whitesmoke;
-  
 }
 
-.footer{
+/* Footer */
+.footer {
+  position: relative;
   background-color: #333333;
-  margin: 0;
-  padding: 50px;
-  margin-top: 20px;
+  padding: 1%;
+  margin-top: 100%;
 }
 
 
+/* Contenedor principal del body */
 .containerBody {
   background-color: whitesmoke;
   padding-top: 80px; /* Ajusta este valor según la altura del header */
-} 
+  min-height: calc(100vh - 160px); /* Asegura que el footer esté al final */
+}
 
-
+/* Texto centrado */
 .text {
   text-align: center;
 }
 
 
-.containerCard { 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-  justify-items: center; /* Centra las tarjetas horizontalmente */
-  align-items: center;   /* Centra las tarjetas verticalmente */
-} 
-
-
-.center{
+/* Texto centrado en el footer */
+.center {
   text-align: center;
   font-size: 50px;
 }
-

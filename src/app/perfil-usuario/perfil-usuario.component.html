@@ -1,9 +1,24 @@
 <div class="perfil-container">
-    <div class="perfil-info">
-      <h2>Perfil de Usuario</h2>
-      <div class="perfil-foto">
-        <img src="https://wallpapers.com/images/hd/best-profile-pictures-2h94ge4qz9y05dbw.jpg" alt="Foto de perfil" class="foto-circular">
+  <header class="header">
+    <nav class="containerHeader">
+      <div class="headerImg">
+        <img src="https://i.redd.it/t6qhk3i3mk4d1.jpeg" alt="ChayanneSmall" width="60px" height="60px">
       </div>
+      <ul class="containerHeaderLista">
+        <li><a routerLink="/screen-home">Inicio</a></li>
+        <li><a routerLink="/screen-home">Buscar</a></li>
+        <li><a routerLink="/login">Iniciar Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <!-- Sección izquierda: Perfil del usuario (fijo) -->
+    <div class="perfil-info">
+      <div class="perfil-foto">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto de perfil" class="foto-circular">
+      </div>
+      <h2>Perfil de Usuario</h2>
       <div class="info-item"><strong>Nombre del Negocio:</strong> <span>{{ nombre_negocio }}</span></div>
       <div class="info-item"><strong>Nombre del Usuario:</strong> <span>{{ nombre_usuario }}</span></div>
       <div class="info-item"><strong>Correo:</strong> <span>{{ correo || 'No especificado' }}</span></div>
@@ -18,7 +33,14 @@
         <span>{{ ubicacion }}</span>
       </div>
     </div>
-    <div class="screen-home">
-      <app-screen-home></app-screen-home>
+
+    <!-- Sección derecha: Dashboard -->
+    <div class="dashboard-container">
+      <app-dashboard></app-dashboard> <!-- Usa el DashboardComponent aquí -->
     </div>
+  </main>
+
+  <footer class="footer">
+    <p class="center">This is the footer</p>
+  </footer>
 </div>

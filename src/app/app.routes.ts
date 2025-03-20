@@ -6,6 +6,7 @@ import { CardProductComponent } from './card-product/card-product.component';
 import { ScreenHomeComponent } from './screen-home/screen-home.component';
 import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
 
+
 export const appRoutes: Routes = [
   { path: '', redirectTo: 'screen-home', pathMatch: 'full' }, // Redirige a /login por defecto
   { path: 'card-product', component: CardProductComponent },
